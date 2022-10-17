@@ -13,7 +13,8 @@ namespace DataAccess.Concrete.EntityFramework.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-NBOA8Q1\LENOVO;Database=DemoDb;Integrated Security=true");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-NBOA8Q1\LENOVO;
+                                        Database=DemoDb;Integrated Security=true");
 
         }
         public DbSet<User>? Users { get; set; }
